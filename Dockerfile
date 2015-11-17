@@ -1,4 +1,4 @@
-FROM mariadb:10.0.21
+FROM mariadb:10.0.22
 MAINTAINER Dmitry Romanov "dmitry.romanov85@gmail.com"
 
 RUN ["apt-get", "update"]
