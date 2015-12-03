@@ -3,7 +3,7 @@ MAINTAINER Dmitry Romanov "dmitry.romanov85@gmail.com"
 
 RUN ["rm", "-Rf", "/var/lib/mysql/; exit 0"]
 RUN ["apt-get", "update"]
-RUN ["apt-get", "-y", "install", "puppet", "mariadb-connect-engine-10.0"]
+RUN ["apt-get", "-y", "install", "puppet", "mariadb-connect-engine-10.0", "nano"]
 
 COPY bash.bashrc /etc/bash.bashrc
 COPY puppet.conf /etc/puppet/puppet.conf
