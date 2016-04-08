@@ -1,7 +1,6 @@
-FROM mariadb:10.0.24
+FROM dmitryromanov85/mariadb_novolumes:10.0.24
 MAINTAINER Dmitry Romanov "dmitry.romanov85@gmail.com"
 
-RUN ["rm", "-Rf", "/var/lib/mysql/; exit 0"]
 RUN apt-get update && apt-get install -y \
     puppet \
     mariadb-connect-engine-10.0 \
