@@ -3,7 +3,6 @@ MAINTAINER Dmitry Romanov "dmitry.romanov85@gmail.com"
 
 RUN apt-get update && apt-get install -y \
     puppet \
-    mariadb-connect-engine-10.0 \
     nano \
  && rm -rf /var/lib/apt/lists/*
 
